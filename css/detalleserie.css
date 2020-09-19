@@ -5,10 +5,22 @@ body{
 h1{
     font-size: xx-large;
 }
+h2{
+    font-family: Arial;
+}
+h3{
+    font-family: Arial;
+}
 .container{
     display: grid;
     grid-template-rows: 5,5% 44,4% 44,4% 5,5%;
     
+}
+.opciones a {
+    color: black;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: Arial;
 }
 
 .encabezado {
@@ -25,12 +37,12 @@ h1{
     font-size: 25px;
 }
 
-.favorito{
-    font-size: 25px;
+.favorito {
+    size: 10%;
 }
 
 .search{
-    font-size: 25px;
+        size: 10%;
 }
 
 .section{
@@ -59,6 +71,7 @@ h1{
 }
 .footer{
     background-color: black ;
+    position: fixed;
     bottom: 0;
     width: 100%;
     opacity: 1;
@@ -69,3 +82,4 @@ h1{
     font-size: x-large;
     text-align: center;
 }
+

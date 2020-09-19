@@ -3,33 +3,47 @@ body{
 }
 h1{
     font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-family: Arial;
+}
+h3{
+    font-family: Arial;
 }
 .container{
     display: grid;
     grid-template-rows: 5,5% 44,4% 44,4% 5,5%;
     
 }
+.opciones a {
+    color: black;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: Arial;
+}
 
 .encabezado {
     background-color: rgba(2, 2, 2, 0.877) ;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    height: 10%;
     width: auto;
     gap: 30px;
     padding: 10px;
-    color: ivory;
+    color: ivory; 
 }
+
 .logo{
     font-size: 25px;
 }
 
-.favorito{
-    font-size: 25px;
+.favorito {
+    size: 10%;
 }
 
 .search{
-    font-size: 25px;
+    size: 10%;
 }
 
 
@@ -70,4 +84,8 @@ h1{
     color: white;
     font-size: x-large;
     text-align: center;
+}
+
+@media(min-width:1080px){
+    
 }
