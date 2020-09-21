@@ -60,65 +60,25 @@ li a:hover:not(.active) {
     color: white;
   }
   
-.pelicula a {
-    color: black;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: Arial;
-}
-
-.series a {
-    color: black;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: Arial;
-}
-
-.titulo {
+.generos h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 5%; 
+    padding: 2%; 
     text-decoration:underline orange
 }
+.generos li{
+   text-align: justify;
+   font-family: arial ;
+   padding: 3px;
+   
 
-.top-peliculas {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 7%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
 }
-
-.top-series {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 7%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-
-.top-kids {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 7%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-
-.container img{
-    border: solid 1px black;
-}
-
 .footer{
     background-color:black;
-    position: f;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
-
 .footer h4{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -127,43 +87,34 @@ li a:hover:not(.active) {
 }
 
 @media(min-width:1080px){
-    .top-peliculas{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .top-kids{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .top-series {
-            grid-template-columns: repeat(4,1fr);
-    }
+    .bannermobile {display: none;}
     .opciones li {   
         display: inline;
         float: left;
     }
+    .generos ul {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
 
-    .bannermobile {display: none;}
+    
 }
 
 @media(min-width:768px){
-    .top-peliculas{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .top-kids{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .top-series {
-            grid-template-columns: repeat(4,1fr);
-    }
+    .bannermobile {display: none;}
     .opciones li {
         display: inline;
         float: left;
     }
-    .bannermobile {display: none;}
+    .generos ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);   
+    }
 }
+
+
 @media(max-width:768px){
     .banner {
     display: none;
     }
 }
-
-
