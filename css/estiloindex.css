@@ -53,7 +53,7 @@ body {
 .opciones li a.active {
         background-color: orange;
         color: white;
-}
+    }   
 
 li a:hover:not(.active) {
     background-color: #555;
