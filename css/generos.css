@@ -7,37 +7,82 @@
 }
 
 .encabezado {
-    background-color: rgb(2, 2, 2) ;
-    display: flex;
-    justify-content: space-between;
-    height: 10%;
-    width: auto;
-    gap: 30px;
-    padding: 10px;
-    color: ivory; 
-}
-
-.favorito {
-    size: 10%;
+    width: 100%;
+    color: black; 
 }
 
 body {
-    margin:0px;
-    background-color: white;
+    margin:0 ;
+    background-color: #EDE2D2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.opciones ul {
+.bannermobile img {
+    height: 100% ;
+    width: 100%;
+}
+.bannermobile {
+    height: 100px;
+}
+
+.banner { display: none;
+}
+
+.navbar {
+    display: none;
+    width: 100%;
+    background-color:black;
+    overflow: auto;
+  }
+  
+  
+   
+.topnav {
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    position: relative;
+  }
+  
+.topnav #myLinks {
+    display: none;
+  }
+  
+.topnav a {
+    color: white;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    
+  }
+  
+.topnav a:hover {
+    background-color: orange;
+    color: black;
+  }
+  
+.active {
+    background-color: gray;
+    color: white;
+  }
+
+  .opciones ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: orange;
-  
-}
-
-.opciones li {
-    display: inline;
-    float: none;
+    display: flex;
+    justify-content: center;
 }
 
 .opciones li a {
@@ -59,8 +104,12 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
-  
-.generos h2 {
+
+  .generos a {
+    text-decoration:none;
+    color: black;
+  }
+  .generos h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 2%; 
@@ -70,15 +119,16 @@ li a:hover:not(.active) {
    text-align: justify;
    font-family: arial ;
    padding: 3px;
-   
-
 }
+
 .footer{
     background-color:black;
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin: top 10px;
 }
+
 .footer h4{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -86,35 +136,89 @@ li a:hover:not(.active) {
     text-align: center;
 }
 
-@media(min-width:1080px){
-    .bannermobile {display: none;}
-    .opciones li {   
-        display: inline;
-        float: left;
-    }
-    .generos ul {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
 
-    
-}
 
 @media(min-width:768px){
+    
     .bannermobile {display: none;}
-    .opciones li {
-        display: inline;
-        float: left;
+
+    .banner {display: block;
+        height: 160px;}
+
+    .banner img {
+        height: 100% ;
+        width: 100%;
     }
-    .generos ul {
+    
+    .topnav { 
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+    .navbar a {
+        float: left;
+        padding: 12px;
+        color:  rgb(214, 211, 211);
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .navbar a:hover {
+        background-color:orange;
+      }
+      
+      .active {
+        background-color: orange;
+        color: rgb(214, 211, 211); 
+      }
+      .generos ul {
         display: grid;
-        grid-template-columns: repeat(3,1fr);   
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
+@media(min-width:1080px){
+    
+    .bannermobile {display: none;}
 
-@media(max-width:768px){
-    .banner {
-    display: none;
+    .topnav { 
+        display: none;
+    }
+
+    .banner {display: block;
+        height: 210px;}
+
+    .banner img {
+        height: 100% ;
+        width: 100%;
+    }
+    
+    .pelicula img, .series img{
+        height: 360px;
+        width: 220px;
+        
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar a {
+        float: left;
+        padding: 12px;
+        color:  rgb(214, 211, 211);
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .navbar a:hover {
+        background-color:orange;
+      }
+      
+      .active {
+        background-color: orange;
+        color: rgb(214, 211, 211); 
+      }
+      .generos ul {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);   
     }
 }

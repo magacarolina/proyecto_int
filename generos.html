@@ -9,55 +9,94 @@
 </head>
 <body>
     
-    <header>
-      <section class="encabezado">
-         <div class="logo"><a href="index.html"><img src="img/peliculas/logo.png" alt="logo" width="45px"> 
+  <section class="encabezado">
+
+    <div class="navbar">
+        
+        <div class="logo">
+            <a href="index.html">
+             <img src="img/peliculas/logo.png" alt="logo" width="45px"> 
+            </a>
+        </div>
+            <a href="generos.html">Generos</a>
+            <a href="">Agregado recientemente</a>
+            <a href="">Mas vistos</a>
+            <a href="">Sugerencias</a>
+      </div>
+
+    <div class="topnav">
+
+            <div class="logo"> <a href="index.html">
+                <img src="img/peliculas/logo.png" alt="logo" width="45px"> </a>
+            </div>
+
+            <div id="myLinks">
+              
+                <a href="generos.html">Generos</a>
+                <a href="">Agregado recientemente</a>
+                <a href="">Mas vistos</a>
+                <a href="">Sugerencias</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </a>
-         </div>
-
-        <div class="search"><i class="fas fa-search"></i></div>
-
-        <div class="favorito"><i class="fas fa-heart"></i> </div>
-      </section>
-
+      </div>
       
-        <div class="banner">  <img src="img/banner1.jpg" alt="banner" width="100%"> 
-      </div>
-      <div class="bannermobile">  <img src="img/bannermobile.jpg" alt="banner" width="100%"> 
-      </div>
-         
+  </section>
 
-     </header>
 
-        <nav class="opciones">
-       <ul>
-            <li><a href="">Generos</a></li>
-            <li><a href="">Agregado recientemente</a></li>
-            <li><a href="">Mas vistos</a></li>
-            <li><a href="">Sugerencias</a></li>
-        </ul>
-        </nav>
+    <div class="banner">  <img src="img/banner1.jpg" alt="banner" > 
+  </div>
+  <div class="bannermobile">  <img src="img/bannermobile.jpg" alt="banner" > 
+  </div>
+    
+  <section class="opciones">
+
+    <ul>
+        <li><a href=""><i class="fas fa-search"></i> Buscar</a></li>
+        <li><a href=""><i class="fas fa-heart"></i> Favoritos</a></li>
+      </ul>
+      </section>
+ </header>
+
 
         <div class="generos">
 
             <h2>Generos</h2>
             
             <ul>
-                <li>Acción</li>
-                <li>Ciencia ficción</li>
-                <li>Ciencia y naturaleza</li>
-                <li>Clásicas</li>
-                <li>Comedias</li>
-                <li>De Hollywood</li>
-                <li>Deportes</li>
-                <li>Documentales</li>
-                <li>Dramas</li>
-                <li>Fantasía</li>
-                <li>Infantiles y familiares</li>
-                <li>Musicales</li>
-                <li>Policiales</li>
-                <li>Terror</li>
-                <li>Thrillers</li>
+                <a href="">
+                  <li>Acción</li>
+                </a>
+                <a href="">
+                  <li>Ciendia ficción</li>
+                </a>
+                <a href="">
+                  <li>Ciencia y naturaleza</li>
+                </a>
+                <a href="">
+                  <li>Clásicas</li>
+                </a>
+                <a href="">
+                  <li>Comedias</li>
+                </a>
+                <a href="">
+                  <li>Documentales</li>
+                </a>
+                <a href="">
+                  <li>Dramas</li>
+                </a>
+                <a href="">
+                  <li>Infantiles y familiares</li>
+                </a>
+                <a href="">
+                  <li>Musicales</li>
+                </a>
+                <a href="">
+                  <li>Terror</li>
+                </a>
+                
 
 
             </ul>
@@ -74,6 +113,15 @@
         <h4>Magali Parra y Agustin Petrini</h4>
         </footer>
 
-        
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          </script>
 </body>
 </html>

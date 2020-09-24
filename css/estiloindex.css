@@ -1,44 +1,39 @@
-.container{
-    margin: 20px;
-}
 
 *{
     box-sizing: border-box;
 }
 
 .encabezado {
-    background-color: rgb(2, 2, 2) ;
-    display: flex;
-    justify-content: space-between;
-    height: 10%;
-    width: auto;
-    gap: 30px;
-    padding: 10px;
-    color: ivory; 
-}
-
-.favorito {
-    size: 10%;
+    width: 100%;
+    color: black; 
 }
 
 body {
-    margin:0px;
-    background-color: white;
+    margin:0 ;
+    background-color: #EDE2D2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.bannermobile img {
+    height: 100% ;
+    width: 100%;
+}
+.bannermobile {
+    height: 100px;
+}
+
+.banner { display: none;
+}
 .opciones ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: orange;
-  
+    display: flex;
+    justify-content: center;
 }
 
-.opciones li {
-    display: inline;
-    float: none;
-}
 
 .opciones li a {
     display: block;
@@ -60,19 +55,77 @@ li a:hover:not(.active) {
     color: white;
   }
   
-.pelicula a {
+.navbar {
+    display: none;
+    width: 100%;
+    background-color:black;
+    overflow: auto;
+  }
+  
+   
+.topnav {
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    position: relative;
+  }
+  
+.topnav #myLinks {
+    display: none;
+  }
+  
+.topnav a {
+    color: white;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    
+  }
+  
+.topnav a:hover {
+    background-color: gray;
+    color: orange;
+  }
+  
+.active {
+    background-color: gray;
+    color: white;
+  }
+
+.container{
+    margin: 10px;
+    
+}
+.container h2 {
+    padding: 40px 0px;
+}
+
+.pelicula, .series {
+    min-height: 360px;
+    width: 100%;
+
+}
+.pelicula img, .series img{
+    height: 210px;
+    width: 1px;
+    
+}
+  
+.pelicula a, .series a {
     color: black;
     text-decoration: none;
-    font-size: 100%;
     font-family: Arial;
 }
 
-.series a {
-    color: black;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: Arial;
-}
 
 .titulo {
     font-family: Arial, Helvetica, sans-serif;
@@ -81,29 +134,40 @@ li a:hover:not(.active) {
     text-decoration:underline orange
 }
 
+.zoom {
+    transition: transform .2s;
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.1); 
+  }
+
+
 .top-peliculas {
-    background-color: white;
+    
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 7%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+
 }
 
 .top-series {
-    background-color: white;
+    
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 7%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
 .top-kids {
-    background-color: white;
+
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 7%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -114,9 +178,11 @@ li a:hover:not(.active) {
 
 .footer{
     background-color:black;
-    position: f;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    margin: top 10px;
+    
 }
 
 .footer h4{
@@ -124,6 +190,58 @@ li a:hover:not(.active) {
     color: white;
     font-size: auto;
     text-align: center;
+}
+
+
+
+@media(min-width:768px){
+    .top-peliculas{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .top-kids{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .top-series {
+            grid-template-columns: repeat(3,1fr);
+    }
+    
+    .bannermobile {display: none;}
+
+    .banner {display: block;
+        height: 160px;}
+
+    .banner img {
+        height: 100% ;
+        width: 100%;
+    }
+    .pelicula img, .series img{
+        height: 320px;
+        width: 221px;
+        
+    }
+    .topnav { 
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+    .navbar a {
+        float: left;
+        padding: 12px;
+        color:  rgb(214, 211, 211);
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .navbar a:hover {
+        background-color: gray;
+        color: orange;
+      }
+      
+      .active {
+        background-color: orange;
+        color: rgb(214, 211, 211); 
+      }
 }
 
 @media(min-width:1080px){
@@ -136,34 +254,47 @@ li a:hover:not(.active) {
     .top-series {
             grid-template-columns: repeat(4,1fr);
     }
-    .opciones li {   
-        display: inline;
-        float: left;
+    
+    .bannermobile {display: none;}
+
+    .topnav { 
+        display: none;
     }
 
-    .bannermobile {display: none;}
+    .banner {display: block;
+        height: 210px;}
+
+    .banner img {
+        height: 100% ;
+        width: 100%;
+    }
+    
+    .pelicula img, .series img{
+        height: 360px;
+        width: 220px;
+        
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar a {
+        float: left;
+        padding: 12px;
+        color:  rgb(214, 211, 211);
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .navbar a:hover {
+        background-color: gray;
+        color: orange;
+      }
+      
+      .active {
+        background-color: orange;
+        color: rgb(214, 211, 211); 
+      }
 }
 
-@media(min-width:768px){
-    .top-peliculas{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .top-kids{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .top-series {
-            grid-template-columns: repeat(4,1fr);
-    }
-    .opciones li {
-        display: inline;
-        float: left;
-    }
-    .bannermobile {display: none;}
-}
-@media(max-width:768px){
-    .banner {
-    display: none;
-    }
-}
+
 
 
