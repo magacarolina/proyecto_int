@@ -11,7 +11,6 @@
 body {
     margin:0 ;
     background-color: #EDE2D2;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .bannermobile img {
@@ -29,11 +28,10 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: orange;
+    background-color: rgb(128, 194, 166);
     display: flex;
     justify-content: center;
 }
-
 
 .opciones li a {
     display: block;
@@ -43,31 +41,49 @@ body {
     font-size: 100%;
     font-family: Arial;
     padding: 8px 16px;
-    background-color: orange;
+    background-color: rgb(128, 194, 166);
 }
 .opciones li a.active {
-        background-color: orange;
+        background-color: white;
         color: white;
     }   
 
 li a:hover:not(.active) {
-    background-color: #555;
+    background-color: rgb(128, 194, 166);
     color: white;
   }
   
-.navbar {
+  .navbar {
     display: none;
     width: 100%;
     background-color:black;
     overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color:  white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color: gray;
+    color: rgb(128, 194, 166);
+  }
+  
+  .active {
+    background-color: rgb(128, 194, 166);
+    color: #EDE2D2; 
+  }
    
 .topnav {
     overflow: hidden;
     background: black;
     width: 100%;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
 .topnav #myLinks {
@@ -92,46 +108,42 @@ li a:hover:not(.active) {
   }
   
 .topnav a:hover {
-    background-color: gray;
-    color: orange;
+    background-color: rgb(128, 194, 166);
+    color: black;
   }
   
 .active {
     background-color: gray;
-    color: white;
+    color: #EDE2D2;
   }
 
 .container{
     margin: 10px;
     
 }
-.container h2 {
-    padding: 40px 0px;
-}
-
 .pelicula, .series {
     min-height: 360px;
     width: 100%;
 
 }
 .pelicula img, .series img{
-    height: 210px;
-    width: 1px;
+    height: 200px;
+    width: 150px;
     
 }
   
 .pelicula a, .series a {
-    color: black;
+    color: rgb(60, 77, 77);
     text-decoration: none;
-    font-family: Arial;
+    font-family: Verdana;
+    text-align: start;
 }
 
-
 .titulo {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 5%; 
-    text-decoration:underline orange
+    text-decoration:underline rgb(128, 194, 166);
 }
 
 .zoom {
@@ -146,30 +158,14 @@ li a:hover:not(.active) {
     transform: scale(1.1); 
   }
 
-
-.top-peliculas {
+.top-peliculas, .top-kids, .top-series {
     
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-
-}
-
-.top-series {
-    
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-
-.top-kids {
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    margin-bottom: 2px;
+    border:ridge rgb(128, 194, 166) ;
+    padding-top: 25px;
 }
 
 .container img{
@@ -178,10 +174,10 @@ li a:hover:not(.active) {
 
 .footer{
     background-color:black;
-    position: fixed;
+    position: ;
     bottom: 0;
     width: 100%;
-    margin: top 10px;
+    margin-top: 30px;
     
 }
 
@@ -219,6 +215,7 @@ li a:hover:not(.active) {
         width: 221px;
         
     }
+    
     .topnav { 
         display: none;
     }
@@ -226,22 +223,7 @@ li a:hover:not(.active) {
     .navbar {
         display: block;
     }
-    .navbar a {
-        float: left;
-        padding: 12px;
-        color:  rgb(214, 211, 211);
-        text-decoration: none;
-        font-size: 17px;
-      }
-      .navbar a:hover {
-        background-color: gray;
-        color: orange;
-      }
-      
-      .active {
-        background-color: orange;
-        color: rgb(214, 211, 211); 
-      }
+    
 }
 
 @media(min-width:1080px){
@@ -270,29 +252,17 @@ li a:hover:not(.active) {
     }
     
     .pelicula img, .series img{
-        height: 360px;
-        width: 220px;
-        
+        height: 340px;
+        width: 230px;
+    }
+
+    .pelicula, .series {
+        padding-bottom: 15px;
     }
     .navbar {
         display: block;
     }
-    .navbar a {
-        float: left;
-        padding: 12px;
-        color:  rgb(214, 211, 211);
-        text-decoration: none;
-        font-size: 17px;
-      }
-      .navbar a:hover {
-        background-color: gray;
-        color: orange;
-      }
-      
-      .active {
-        background-color: orange;
-        color: rgb(214, 211, 211); 
-      }
+    
 }
 
 

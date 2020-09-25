@@ -1,6 +1,3 @@
-.container{
-    margin: 20px;
-}
 
 *{
     box-sizing: border-box;
@@ -14,7 +11,6 @@
 body {
     margin:0 ;
     background-color: #EDE2D2;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .bannermobile img {
@@ -27,21 +23,66 @@ body {
 
 .banner { display: none;
 }
+  .opciones ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(128, 194, 166);
+    display: flex;
+    justify-content: center;
+}
 
+.opciones li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: Arial;
+    padding: 8px 16px;
+    background-color: rgb(128, 194, 166);
+}
+.opciones li a.active {
+        background-color: white;
+        color: white;
+    }   
+
+li a:hover:not(.active) {
+    background-color: rgb(128, 194, 166);
+    color: white;
+  }
 .navbar {
     display: none;
     width: 100%;
     background-color:black;
     overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color:  white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color: gray;
+    color: rgb(128, 194, 166);
+  }
   
+  .active {
+    background-color: rgb(128, 194, 166);
+    color: #EDE2D2; 
+  }
    
 .topnav {
     overflow: hidden;
     background: black;
     width: 100%;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
 .topnav #myLinks {
@@ -66,60 +107,54 @@ body {
   }
   
 .topnav a:hover {
-    background-color: orange;
+    background-color: rgb(128, 194, 166);
     color: black;
   }
   
 .active {
     background-color: gray;
-    color: white;
+    color: #EDE2D2;
   }
 
-  .opciones ul {
+.generos{
+        min-height: 360px;
+        width: 100%;
+}
+
+  .generos ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-}
-
-.opciones li a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: Arial;
-    padding: 8px 16px;
-    background-color: orange;
-}
-.opciones li a.active {
-        background-color: orange;
-        color: white;
-    }   
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    margin: 10px;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 100px;
+    border: ridge rgb(128, 194, 166);
+    padding-bottom: 20px;
   }
 
   .generos a {
     text-decoration:none;
-    color: black;
+    color: rgb(60, 77, 77);
   }
   .generos h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana;
     text-align: center;
     padding: 2%; 
-    text-decoration:underline orange
+    text-decoration:underline dotted;
 }
 .generos li{
-   text-align: justify;
-   font-family: arial ;
-   padding: 3px;
+   text-align: center;
+   font-family: Verdana ;
+   text-decoration:none;
 }
+
+
+.generos img{
+    height: 200px;
+    width: 300px;
+    border: solid black;
+}
+
 
 .footer{
     background-color:black;
@@ -157,24 +192,10 @@ li a:hover:not(.active) {
     .navbar {
         display: block;
     }
-    .navbar a {
-        float: left;
-        padding: 12px;
-        color:  rgb(214, 211, 211);
-        text-decoration: none;
-        font-size: 17px;
-      }
-      .navbar a:hover {
-        background-color:orange;
-      }
-      
-      .active {
-        background-color: orange;
-        color: rgb(214, 211, 211); 
-      }
+    
       .generos ul {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -193,32 +214,13 @@ li a:hover:not(.active) {
         height: 100% ;
         width: 100%;
     }
-    
-    .pelicula img, .series img{
-        height: 360px;
-        width: 220px;
-        
-    }
+
     .navbar {
         display: block;
     }
-    .navbar a {
-        float: left;
-        padding: 12px;
-        color:  rgb(214, 211, 211);
-        text-decoration: none;
-        font-size: 17px;
-      }
-      .navbar a:hover {
-        background-color:orange;
-      }
-      
-      .active {
-        background-color: orange;
-        color: rgb(214, 211, 211); 
-      }
+    
       .generos ul {
         display: grid;
-        grid-template-columns: repeat(4,1fr);   
+        grid-template-columns: repeat(3,1fr);   
     }
 }
