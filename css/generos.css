@@ -179,7 +179,7 @@ li a:hover:not(.active) {
 
 .footer .nombre {
   text-align: justify;
-  padding: 20px;
+  padding: 30px;
 }
 
 @media(min-width:420px){
