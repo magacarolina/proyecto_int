@@ -119,6 +119,7 @@ li a:hover:not(.active) {
 .generos{
         min-height: 360px;
         width: 100%;
+
 }
 
   .generos ul{
@@ -130,6 +131,7 @@ li a:hover:not(.active) {
     margin-bottom: 100px;
     border: ridge rgb(128, 194, 166);
     padding-bottom: 20px;
+    background-color: black
   }
 
   .generos a {
@@ -157,20 +159,36 @@ li a:hover:not(.active) {
 
 
 .footer{
-    background-color:black;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin: top 10px;
+  background-color:black;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+  color: #EDE2D2;
+  padding: 20px;
+  font-family: Arial;
 }
 
-.footer h4{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: auto;
-    text-align: center;
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
 }
 
+.footer .nombre {
+  text-align: justify;
+  padding: 20px;
+}
+
+@media(min-width:420px){
+  
+  .footer ul{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
 @media(min-width:768px){
@@ -197,6 +215,10 @@ li a:hover:not(.active) {
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .footer ul{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media(min-width:1080px){
@@ -223,4 +245,8 @@ li a:hover:not(.active) {
         display: grid;
         grid-template-columns: repeat(3,1fr);   
     }
+    .footer ul{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
 }
