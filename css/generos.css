@@ -11,6 +11,7 @@
 body {
     margin:0 ;
     background-color: #EDE2D2;
+    font-family:'Work Sans', sans-serif;
 }
 
 .bannermobile img {
@@ -55,13 +56,13 @@ body {
 .generos li a:hover:not(.active) {
     color: white;
   }
-  
+
 .navbar {
     display: none;
     width: 100%;
     background-color:black;
     overflow: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Work Sans', sans-serif;
   }
   
   .navbar .logo a{
@@ -95,7 +96,7 @@ body {
     background: black;
     width: 100%;
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+
   }
   
 .topnav #myLinks {
@@ -159,7 +160,6 @@ body {
 }
 .generos li{
    text-align: center;
-   font-family: Verdana ;
    text-decoration:none;
 }
 
@@ -168,6 +168,12 @@ body {
     height: 200px;
     width: 300px;
     border: solid black;
+    opacity: 0.6;
+   
+}
+
+.generos img:hover {
+  opacity: 1.0;
 }
 
 
@@ -178,7 +184,6 @@ body {
   margin-top: 30px;
   color: #EDE2D2;
   padding: 20px;
-  font-family: Arial;
 }
 
 .footer ul {

@@ -12,6 +12,7 @@ body {
     margin:0 ;
     background-color: black;
     color: blanchedalmond;
+    font-family:'Work Sans', sans-serif;
 }
 
 .bannermobile img {
@@ -59,7 +60,7 @@ li a:hover:not(.active) {
     width: 100%;
     background-color:black;
     overflow: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Work Sans', sans-serif;
   }
   
   .navbar .logo a{
@@ -93,7 +94,7 @@ li a:hover:not(.active) {
     background: black;
     width: 100%;
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    
   }
   
 .topnav #myLinks {
@@ -141,7 +142,7 @@ li a:hover:not(.active) {
 .pelicula a, .series a {
     color: rgb(60, 77, 77);
     text-decoration: none;
-    font-family: Verdana;
+    font-family:'Work Sans', sans-serif;
     text-align: start;
 }
 
@@ -187,7 +188,7 @@ li a:hover:not(.active) {
     bottom: 0;
     width: 100%;
     margin-top: 30px;
-    font-family: Arial;
+    
     
 }
 
