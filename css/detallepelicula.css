@@ -16,29 +16,37 @@ body {
    
   }
 
-  .container img{ 
-    width: 100% ;
-    opacity: 0.5;
-    padding: 15px;
-    margin-bottom: 20px;
-    height: 100%;
+
+  .container {
+    min-height: 770px;
+    background-image: url(/img/peliculas/tedbundy-detalles.jpg);
+    background-size: cover;
+    background-position: center;
+
+  }
+  .background {
+   background-color: rgba(0,0,0,0.5);
     
   }
 
-  .container {
-    margin: 15px;
+  .texto h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+    text-decoration:underline gray;
   }
 
-.fichatecnica{
+  .container article {
+    padding: 10%;
+  }
+
+  .fichatecnica{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr ;
   padding: 0;
+  column-gap: 5px;
   
 }
-
-  
-
-
   .opciones ul {
     list-style-type: none;
     margin: 0;
@@ -50,21 +58,21 @@ body {
 }
 
 .opciones li a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: Arial;
-    padding: 8px 16px;
-    background-color: rgb(128, 194, 166);
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 500;
+  padding: 8px 16px;
+  background-color: rgb(128, 194, 166);
 }
 .opciones li a.active {
         background-color: white;
         color: white;
     }   
 
-li a:hover:not(.active) {
+.opciones li a:hover:not(.active) {
     background-color: rgb(128, 194, 166);
     color: white;
   }
@@ -143,16 +151,12 @@ li a:hover:not(.active) {
 
 
   .footer{
-    background-color:rgb(128, 194, 166);
+    background-color:black;
     bottom: 0;
     width: 100%;
-    margin-top: 30px;
-    font-family: Arial;
-    color: black;
-    padding-top: 20px;
-    position: fixed;
-    border-top: 1px solid #e1e1e1
-    
+    padding: 30px 0;
+    border-top: 1px solid #e1e1e1;
+ 
 }
 
 .footer ul {
@@ -163,10 +167,14 @@ li a:hover:not(.active) {
     margin: 0;
     padding: 0;
 }
+.footer a{
+    text-decoration: none;
+    color: gray;
+}
 
-.footer .nombre {
-    text-align: justify;
-    padding: 30px;
+
+.footer p{
+    text-align: center ;
 }
 @media(min-width:420px){
   

@@ -40,7 +40,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 100%;
-    font-family: Arial;
+    font-weight: 500;
     padding: 8px 16px;
     background-color: rgb(128, 194, 166);
 }
@@ -138,12 +138,12 @@ body {
 
   .generos ul{
     list-style-type: none;
-    margin: 10px;
+    margin: 5px;
     padding:0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 100px;
-    border: ridge rgb(128, 194, 166);
+    border: solid rgb(128, 194, 166);
     padding-bottom: 20px;
     background-color: black
   }
@@ -153,7 +153,7 @@ body {
     color: rgb(60, 77, 77);
   }
   .generos h2 {
-    font-family: Verdana;
+    font-weight: bold ;
     text-align: center;
     padding: 2%; 
     text-decoration:underline dotted;
@@ -161,6 +161,10 @@ body {
 .generos li{
    text-align: center;
    text-decoration:none;
+  
+}
+.generos h1{
+  font-weight: normal;
 }
 
 
@@ -177,13 +181,13 @@ body {
 }
 
 
+
 .footer{
   background-color:black;
   bottom: 0;
   width: 100%;
-  margin-top: 30px;
-  color: #EDE2D2;
-  padding: 20px;
+  padding: 30px 0;
+
 }
 
 .footer ul {
@@ -194,10 +198,15 @@ body {
   margin: 0;
   padding: 0;
 }
+.footer a{
+  text-decoration: none;
+  color: gray;
+}
 
-.footer .nombre {
-  text-align: justify;
-  padding: 30px;
+
+.footer p{
+  text-align: center ;
+  color: blanchedalmond;
 }
 
 @media(min-width:420px){
