@@ -217,6 +217,12 @@ body {
         grid-template-columns: repeat(2,1fr);
         
     }
+
+     .pelicula img, .series img{
+        height: 310px;
+        width: 211px;
+        
+    }
     .zoom {
         width: 200px;
     }
